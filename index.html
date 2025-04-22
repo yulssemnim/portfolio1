@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="">
+    <meta name="author" content="kin jeong e">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script> <!-- ✅ 드래그 효과용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script> <!-- 선택 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <script src="js/common.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/footer.js"></script>
+</head>
+
+<body class="in">
+    <div class="wrap">
+        <header class="">
+            <button class="dot_ham">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </button><!-- //.dot-hamburger -->
+        </header>
+        <div class="gnb_overlay">
+            <ul class="gnb">
+                <li class="red"><a href="index.html">home</a></li>
+                <li><a href="#">mind map</a></li>
+                <li class="navy"><a href="#">caffee bean Renewal</a></li>
+                <li class="navy"><a href="#">coding design</a></li>
+                <li><a href="#">mini-team</a></li>
+                <li><a href="#">k-brand</a></li>
+                <li><a href="#">ai-chat comunity</a></li>
+            </ul>
+        </div><!-- //.gnb-overlay -->
+        <section class="splash" id="splash">
+            <div class="txt">
+                <h1 id="text">"Ready &nbsp; to &nbsp;break &nbsp; the &nbsp;mold?"</h1>
+                <canvas id="particles"></canvas>
+                <div id="brokenGlass"></div>
+            </div>
+        </section><!-- //.splash -->
+        <div class="blackout"></div>
+        <section class="values">
+
+            <div class="txt_neon">
+                <h1><span class="loose">Break</span> the mold,<br>
+                    innovat with design</h1>
+            </div>
+            <a href="#" id="btn">
+                mind map show
+            </a>
+
+        </section><!-- //.values -->
+        <section class="scroll">
+            <div class="bg_pin"></div>
+            <ul class="project_wrap">
+                <li class="on">
+                    <div class="top_txt">
+                        <div class="num">
+                            <p>1</p>
+                        </div>
+                        <div class="title_fill"><span>caffee bean<br>Renewal</span>
+                        </div>
+                    </div>
+                    <div class="under_txt">
+                        <div class="middle_txt">1인 프로젝트 ( ux기획, ui 디자인 100%)</div>
+                        <div class="bottom_txt">#리뉴얼 #커피빈 #ui 경험 기반</div>
+                    </div>
+                    <a href="https://example.com" class="button" aria-label="자세히 보기" target="_blank" rel="noopener">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ↗ 대각선 라인 -->
+                            <line x1="20" y1="130" x2="130" y2="20" />
+                            <!-- 화살 머리: 훨씬 길게 튀어나오게 -->
+                            <polyline points="70 20, 130 20, 130 80" />
+                        </svg>
+                    </a>
+                </li>
+                <li class=" ">
+                    <div class="top_txt">
+                        <div class="num">
+                            <p>2</p>
+                        </div>
+                        <div class="title_fill"><span>caffee bean<br>Renewal</span>
+                        </div>
+                    </div>
+                    <div class="under_txt">
+                        <div class="middle_txt">1인 프로젝트 ( ux기획, ui 디자인 100%)</div>
+                        <div class="bottom_txt">#리뉴얼 #커피빈 #ui 경험 기반</div>
+                    </div>
+                    <a href="https://example.com" class="button" aria-label="자세히 보기" target="_blank" rel="noopener">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ↗ 대각선 라인 -->
+                            <line x1="20" y1="130" x2="130" y2="20" />
+                            <!-- 화살 머리: 훨씬 길게 튀어나오게 -->
+                            <polyline points="70 20, 130 20, 130 80" />
+                        </svg>
+                    </a>
+                </li>
+                <li class=" ">
+                    <div class="top_txt">
+                        <div class="num">
+                            <p>3</p>
+                        </div>
+                        <div class="title_fill"><span>caffee bean<br>Renewal</span>
+                        </div>
+                    </div>
+                    <div class="under_txt">
+                        <div class="middle_txt">1인 프로젝트 ( ux기획, ui 디자인 100%)</div>
+                        <div class="bottom_txt">#리뉴얼 #커피빈 #ui 경험 기반</div>
+                    </div>
+                    <a href="https://example.com" class="button" aria-label="자세히 보기" target="_blank" rel="noopener">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ↗ 대각선 라인 -->
+                            <line x1="20" y1="130" x2="130" y2="20" />
+                            <!-- 화살 머리: 훨씬 길게 튀어나오게 -->
+                            <polyline points="70 20, 130 20, 130 80" />
+                        </svg>
+                    </a>
+                </li>
+                <li class=" ">
+                    <div class="top_txt">
+                        <div class="num">
+                            <p>4</p>
+                        </div>
+                        <div class="title_fill">
+                            <span>caffee bean<br>Renewal</span>
+                        </div>
+                    </div>
+                    <div class="under_txt">
+                        <div class="middle_txt">1인 프로젝트 ( ux기획, ui 디자인 100%)</div>
+                        <div class="bottom_txt">#리뉴얼 #커피빈 #ui 경험 기반</div>
+                    </div>
+                    <a href="https://example.com" class="button" aria-label="자세히 보기" target="_blank" rel="noopener">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ↗ 대각선 라인 -->
+                            <line x1="20" y1="130" x2="130" y2="20" />
+                            <!-- 화살 머리: 훨씬 길게 튀어나오게 -->
+                            <polyline points="70 20, 130 20, 130 80" />
+                        </svg>
+                    </a>
+                </li>
+                <li class=" ">
+                    <div class="top_txt">
+                        <div class="num">
+                            <p>5</p>
+                        </div>
+                        <div class="title_fill"><span>caffee bean<br>Renewal</span></div>
+                    </div>
+                    <div class="under_txt">
+                        <div class="middle_txt">1인 프로젝트 ( ux기획, ui 디자인 100%)</div>
+                        <div class="bottom_txt">#리뉴얼 #커피빈 #ui 경험 기반</div>
+                    </div>
+                    <a href="https://example.com" class="button" aria-label="자세히 보기" target="_blank" rel="noopener">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ↗ 대각선 라인 -->
+                            <line x1="20" y1="130" x2="130" y2="20" />
+                            <!-- 화살 머리: 훨씬 길게 튀어나오게 -->
+                            <polyline points="70 20, 130 20, 130 80" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section><!-- //.scroll -->
+
+        <footer>
+            <div class="inner">
+                <div class="footer_top">
+                    <!-- 떨어지는 텍스트 -->
+                    <div class="drop-wrapper">
+                        <canvas id="matter-canvas"></canvas>
+                        <div class="tag-container">
+                            <div class="tag">FINAL_v27.ai</div>
+                            <div class="tag">DETAIL ADDICT</div>
+                            <div class="tag">TRY AGAIN</div>
+                            <div class="tag">FUN IS MY FUEL</div>
+                            <div class="tag">WIREFRAME</div>
+                            <div class="tag">PROTOTYPE</div>
+                            <div class="tag">CREATIVE DIRECTION</div>
+                            <div class="tag">CREATIVE DIRECTION</div>
+                            <div class="tag">CREATIVE DIRECTION</div>
+                        </div><!-- //.tag-container -->
+                    </div><!-- //.drop-wrapper -->
+                    <div class="txt">
+                        <ul class="left">
+                            <li class="small"> Built with</li>
+                            <li>Figma, GSAP</li>
+                            <li class="right_txt"> , HTML/CSS, Ps, Ai</li>
+                            <li>Creative Thinker</li>
+                            <li>Creative Thinker</li>
+                            <li>Creative Thinker</li>
+                            <li>Everything</li>
+                            <li class="small"> you saw here</li>
+                            <li class="small">was built</li>
+                            <li>with love and madness.</li>
+                        </ul>
+                        <div class="center">
+                            <h2>THANKS
+                                <br>
+                                FOR WATCHING
+                            </h2>
+                            <a href="#">
+                                <span>contact me</span>
+                                <span>contact me</span>
+                                <span>contact me</span>
+                                <span>contact me</span>
+                            </a>
+                        </div><!-- //.center -->
+
+                        <ul class="right">
+                            <li class="small">Let's create something</li>
+                            <li class="small">meaningful.</li>
+                            <li class="small"> Say hello anytime.</li>
+                            <li>CONTACT · PLAY AGAIN</li>
+                            <li class="small">PORTFOLIO by JEONG-E / 2025</li>
+                        </ul>
+                    </div><!-- txt -->
+                </div><!-- //.footer_top -->
+                <div class="footer_bottom">
+                    <p>© 2025 Jeong E Kim. All rights reserved.</p>
+                </div><!-- //.footer_bottom -->
+            </div><!-- //.inner -->
+        </footer>
+    </div><!-- ../wrap -->
+</body>
+
+</html>

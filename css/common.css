@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import url(../font/font.css);
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Orbitron:wght@400..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+:root {
+    --pretend: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --Druk: 'DrukWideBold';
+    --Marquee: 'Marquee Moon';
+    --Anton: "Anton SC", sans-serif;
+    --Audiowide: "Audiowide", sans-serif;
+    --Orbitron: "Orbitron", sans-serif;
+    --light-black: #0F0F0F;
+    --font-yellow: #FED128;
+    --first-radial: radial-gradient(94.25% 94.25% at 94.25% 50%, #6F6F6F 0%, #FFF 48.36%, #999 100%);
+    --red: #E15231;
+    --light-orange: #DD9013;
+    --beige: #EDDFBE;
+    --navy: #1C2934;
+    --bora: #39244C;
+    --orang: #FF9B28;
+    --mint: #00FFE0;
+    --last-radial: radial-gradient(94.25% 94.25% at 94.25% 50%, #6F6F6F 10.1%, #FFF 60.58%, #E05231 100%);
+    --font-gray: #AEAEAE;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --footerFont-color : #FCE2D2;
+    --footer-buttom : #E05231;
+
+
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 50px 0 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header .dot_ham {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--beige);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: .3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+header button:hover {
+    background-color: var(--red);
+}
+
+header .dot_ham ul {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+header .dot_ham ul li {
+    width: 8px;
+    height: 8px;
+    background-color: var(--red);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+header button:hover ul li {
+    background-color: var(--beige);
+}
+
+
+header.on .dot_ham ul li {
+    position: absolute;
+    width: 31px;
+    height: 4px;
+    border-radius: 0;
+    border-radius: 999px;
+    transition: 0.3s ease;
+}
+
+header.on .dot_ham ul li:nth-child(1) {
+    transform: rotate(45deg);
+    /* transform-origin: left center; */
+}
+
+header.on .dot_ham ul li:nth-child(2) {
+    opacity: 0;
+}
+
+header.on .dot_ham ul li:nth-child(3) {
+    transform: rotate(-45deg);
+    /* transform-origin: left center; */
+}
+
+
+/* x button */
+.gnb_overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    display: flex;
+    pointer-events: none;
+    flex-direction: column;
+    padding: 50px 50px 0 0;
+    align-items: flex-end;
+    gap: 140px;
+    transition: .6s;
+    opacity: 0;
+    z-index: 100;
+}
+
+.gnb_overlay.on {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gnb_overlay button:hover {
+    background-color: var(--red);
+}
+
+.gnb_overlay button:hover span {
+    background-color: var(--beige);
+}
+
+/* gnb */
+.gnb_overlay ul.gnb {
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    color: var(--white-color);
+    font-family: var(--Orbitron);
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 220px;
+}
+
+.gnb_overlay ul.gnb li {
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 15px 40px;
+    background-color: var(--light-orange);
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+}
+
+.gnb_overlay ul.gnb li.red {
+    background-color: var(--red);
+}
+
+.gnb_overlay ul.gnb li.navy {
+    background-color: var(--navy);
+
+}
+
+.gnb_overlay ul.gnb li:hover {
+    transform: translateY(-8px) rotate(5deg);
+}
+
+.gnb_overlay ul.gnb li a {
+    display: block;
+}
+
+.gnb_overlay ul.gnb {
+    position: relative;
+    right: -80px;
+    opacity: 0;
+    transition: right 0.5s ease, opacity 0.5s ease;
+}
+
+.gnb_overlay.on ul.gnb {
+    right: 0;
+    opacity: 1;
+}

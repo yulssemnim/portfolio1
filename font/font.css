@@ -1,0 +1,17 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Marquee Moon';
+    src: url('Marquee-Moon.woff') 
+    format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('DrukWideBold.woff') 
+    format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
